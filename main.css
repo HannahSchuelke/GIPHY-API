@@ -1,0 +1,29 @@
+header {
+    background: navy;
+    color: white;
+    font-size: 80px;
+}
+
+#add { 
+    float: right;
+    font-size: 20px;
+    /* padding: 50px; */
+}
+
+#addInput { 
+    float: right;
+    font-size: 20px;
+}
+
+#button-container { 
+    background-color: navy;
+}
+
+#favorites {
+
+}
+
+#grid {
+    align-content: center;
+}
+
