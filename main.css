@@ -6,13 +6,13 @@ header {
 
 #add { 
     float: right;
-    font-size: 20px;
+    font-size: 15px;
     /* padding: 50px; */
 }
 
 #addInput { 
     float: right;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 #button-container { 
