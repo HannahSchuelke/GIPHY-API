@@ -31,11 +31,6 @@ $.ajax({
   console.log(response);
   var results = response.data;
   console.log(results)
-});
-// 
-
-
-
 
 // this part is for displaying the gifs
   // Use a loop that appends a button for each string in the array.
@@ -56,7 +51,12 @@ $.ajax({
 
       // Giving the image tag an src attribute of a proprty pulled off the
       // result item
-      personImage.attr("src", results[i].images.fixed_height.url);
+      personImage.attr("src", results[i].images.original_still.url);
+      personImage.attr("class", "gif")
+      personImage.attr("data-still", results[i].images.original_still.url)
+      personImage.attr("data-animate", results[i].images.original.url)
+      personImage.attr("data-state", "still")
+
 
       // Appending the paragraph and personImage we created to the "gifDiv" div we created
       gifDiv.append(p);
@@ -66,4 +66,28 @@ $.ajax({
       $(".grid").prepend(gifDiv);
     }
   }
+    // click move click stop
+    $(".gif").on("click", function() {
+      // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
+      var state = $(this).attr("data-state");
+      // If the clicked image's state is still, update its src attribute to what its data-animate value is.
+      // Then, set the image's data-state to animate
+      // Else set src to the data-still value
+      if (state === "still") {
+        $(this).attr("src", $(this).attr("data-animate"));
+        $(this).attr("data-state", "animate");
+      } else {
+        $(this).attr("src", $(this).attr("data-still"));
+        $(this).attr("data-state", "still");
+      }
+    });
+
+
+});
+// connecting these two parts: buttons to results, making AJAX appear
+
+
+
+
+
 })
