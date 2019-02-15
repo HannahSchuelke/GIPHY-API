@@ -4,8 +4,6 @@
 
 A HTML/CSS/Javascript/Jquery/API project for the UMN Coding Bootcamp, Assignment 6. 
 
-![](unit-4-game/assets/images/crystalCollector.png)
-
 ## Accessible at:
 
   https://hannahschuelke.github.io/GIPHY-API/
