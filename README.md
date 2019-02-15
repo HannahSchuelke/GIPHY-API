@@ -8,7 +8,7 @@ A HTML/CSS/Javascript/Jquery/API project for the UMN Coding Bootcamp, Assignment
 
 ## Accessible at:
 
- https://hannahschuelke.github.io/unit-4-game/
+  https://hannahschuelke.github.io/GIPHY-API/
 
 ## Author
 
